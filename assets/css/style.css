@@ -1,0 +1,108 @@
+/* Import des polices */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@font-face {
+  font-family: "Raleway";
+  src: url('./assets/fonts/Raleway-Regular.ttf') format('truetype');
+}
+
+/* Général */
+body {
+  background-color: #782221; /* Couleur de fond principale */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: "Raleway", sans-serif; /* Police principale */
+  flex-direction: ;
+}
+
+main {
+  width: 1160px; /* Largeur fixe */
+  background-color: #dbc2a4; /* Fond clair pour le CV */
+  padding: 20px;
+  border-right: 5px solid #2c1d27; /* Bordure droite */
+  box-sizing: border-box; /* Inclure marges/bordures dans la taille */
+}
+
+/* En-tête */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header em {
+  font-family: "Lato", sans-serif; /* Police pour le nom */
+  font-size: 2rem;
+  color: #2c1d27; /* Texte sombre */
+}
+
+header h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  color: #2c1d27;
+}
+
+/* Photo de profil */
+#Photo-profil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Photo arrondie */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Ombre autour */
+  cursor: pointer; /* Indicateur interactif */
+  margin: 20px auto;
+  display: block;
+}
+
+/* Adresse et liens */
+address {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #2c1d27;
+  margin-bottom: 20px;
+}
+
+address a {
+  display: block; /* Lien sur une nouvelle ligne */
+  color: black;
+  text-decoration: none;
+}
+
+address a:hover {
+  text-decoration: underline;
+}
+
+/* Sections et mise en page */
+section, aside {
+  margin: 20px 0;
+}
+
+h2, h3 {
+  font-family: "Lato", sans-serif;
+  color: #2c1d27;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: square; /* Puces carrées */
+  padding-left: 20px; /* Indentation */
+}
+
+li {
+  margin: 5px 0;
+}
+
+/* Effets dynamiques */
+#Photo-profil:hover {
+  transform: scale(1.1); /* Zoom au survol */
+  transition: transform 0.3s ease-in-out;
+}
+
+section:hover, aside div:hover {
+  border-right: 4px solid #782221; /* Trait bordeaux */
+  padding-right: 4px;
+}
+
+footer img:hover {
+  opacity: 0.7; /* Réduction d'opacité au survol */
+  transition: opacity 0.3s ease-in-out;
+}
